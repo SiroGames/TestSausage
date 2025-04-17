@@ -10,6 +10,21 @@
         body {
             background-color: #ffc6eb;
         }
+
+        @media screen and (min-width: 768px) {
+            body {
+                background: #ffc6eb;
+            }
+
+            #unity-container {
+                width: 50vh;
+                height: 100%;
+                margin: auto;
+                left: 0;
+                right: 0;
+            }
+        }
+  
     </style>
 </head>
   <body>
@@ -103,8 +118,8 @@
 
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
-        canvas.style.width = "600px";
-        canvas.style.height = "960px";
+       // canvas.style.width = "600px";
+       // canvas.style.height = "960px";
       }
 
       document.querySelector("#unity-loading-bar").style.display = "block";
